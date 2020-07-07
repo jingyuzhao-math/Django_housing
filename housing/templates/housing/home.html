@@ -1,0 +1,11 @@
+{% extends "housing/base.html" %}
+{% block content %}
+    <h2> &nbsp; Welcome to US Housing AI Website!</h2><br>
+    <h4> &nbsp; &nbsp; Are you currently:</h4>
+    <a class="nav-item nav-link" href="{% url 'hot-sales' %}">Leasing or selling your apartment or house? Post your listing on our website!</a>
+    <img src ='/media/home/housing_listings.png', width = 750>
+    <a class="nav-item nav-link" href="{% url 'housing-stats' %}">Making a difficult decison about which properties to purchase? Our housing AI can help you! </a>
+    <img src ='/media/home/price_changes.png', width = 750>
+    <a class="nav-item nav-link" href="{% url 'housing-ai' %}">Trying to access the current market value of your real etate before selling? Our housing AI can help you! </a>
+    <img src ='/media/home/price_prediction.png', width = 760>
+{% endblock content %}
